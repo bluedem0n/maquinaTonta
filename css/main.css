@@ -1,0 +1,17 @@
+.circulo{
+	border-radius: 50%;
+	border: 2px solid black;
+	display: inline-block;
+	height: 150px;
+	width: 100px;
+    margin-left: 20%;
+}
+.rojo{
+	background-color: #da0505;
+}
+.amarillo{
+	background-color: #f5e42d;
+}
+.verde{
+	background-color: #a5f52d;
+}

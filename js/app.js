@@ -5,19 +5,19 @@ window.addEventListener("load", function(){
 		if(contador == 1){
 			document.getElementsByClassName("circulo")[0].style.border = "4px solid gray";
 			document.getElementById("input").placeholder = "Rojo";
-			document.getElementsByClassName("circulo")[1].style.border = "1px solid black";
-			document.getElementsByClassName("circulo")[2].style.border = "1px solid black";
+			document.getElementsByClassName("circulo")[1].style.border = "2px solid black";
+			document.getElementsByClassName("circulo")[2].style.border = "2px solid black";
 		}
 		else if(contador == 2){
-			document.getElementsByClassName("circulo")[0].style.border = "1px solid black";
+			document.getElementsByClassName("circulo")[0].style.border = "2px solid black";
 			document.getElementById("input").placeholder = "Amarillo";
 			document.getElementsByClassName("circulo")[1].style.border = "4px solid gray";
-			document.getElementsByClassName("circulo")[2].style.border = "1px solid black";
+			document.getElementsByClassName("circulo")[2].style.border = "2px solid black";
 		}
-		else{
-			document.getElementsByClassName("circulo")[0].style.border = "1px solid black";
+		else if(contador == 3){
+			document.getElementsByClassName("circulo")[0].style.border = "2px solid black";
 			document.getElementById("input").placeholder = "Verde";
-			document.getElementsByClassName("circulo")[1].style.border = "1px solid black";
+			document.getElementsByClassName("circulo")[1].style.border = "2px solid black";
 			document.getElementsByClassName("circulo")[2].style.border = "4px solid gray";
 			contador = 0;
 		}

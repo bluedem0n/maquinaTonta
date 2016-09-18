@@ -1,24 +1,24 @@
 window.addEventListener("load", function(){
 	var boton1 = document.getElementById("cri");
+	var contador = 1;
 	boton1.addEventListener("click", function(){
-        var contador = 1;
 		if(contador == 1){
-			document.getElementsByClassName("circulo")[0].style.border = "4px solid gray";
+			document.getElementsByClassName("circulo")[0].style.borderColor = "blue";
 			document.getElementById("input").placeholder = "Rojo";
-			document.getElementsByClassName("circulo")[1].style.border = "2px solid black";
-			document.getElementsByClassName("circulo")[2].style.border = "2px solid black";
+			document.getElementsByClassName("circulo")[1].style.borderColor = "gray";
+			document.getElementsByClassName("circulo")[2].style.borderColor = "gray";
 		}
-		else if(contador == 2){
-			document.getElementsByClassName("circulo")[0].style.border = "2px solid black";
+		if(contador == 2){
+			document.getElementsByClassName("circulo")[1].style.borderColor = "blue";
+			document.getElementsByClassName("circulo")[0].style.borderColor = "gray";
 			document.getElementById("input").placeholder = "Amarillo";
-			document.getElementsByClassName("circulo")[1].style.border = "4px solid gray";
-			document.getElementsByClassName("circulo")[2].style.border = "2px solid black";
+			document.getElementsByClassName("circulo")[2].style.borderColor = "gray";
 		}
-		else if(contador == 3){
-			document.getElementsByClassName("circulo")[0].style.border = "2px solid black";
+		if(contador == 3){
+			document.getElementsByClassName("circulo")[2].style.borderColor = "blue";
+			document.getElementsByClassName("circulo")[0].style.borderColor = "gray";
 			document.getElementById("input").placeholder = "Verde";
-			document.getElementsByClassName("circulo")[1].style.border = "2px solid black";
-			document.getElementsByClassName("circulo")[2].style.border = "4px solid gray";
+			document.getElementsByClassName("circulo")[1].style.borderColor = "gray";
 			contador = 0;
 		}
 		contador++;
